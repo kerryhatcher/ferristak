@@ -70,12 +70,13 @@ pub async fn create(
 /// `GET /api/v1/cot/events` — the event feed, newest first.
 pub async fn list(
     State(state): State<AppState>,
-    _caller: AuthUser,
+    caller: AuthUser,
     headers: HeaderMap,
     Query(query): Query<ListQuery>,
 ) -> Result<Response, AppError> {
     let limit = query.limit.unwrap_or(100).clamp(1, 500);
-    let events = cot::list(&state.db, limit, query.since, query.uid.as_deref()).await?;
+    let owner = caller.event_owner_filter(state.config.event_visibility);
+    let events = cot::list(&state.db, limit, query.since, query.uid.as_deref(), owner).await?;
 
     render_events(&events, wants_xml(query.format.as_deref(), &headers))
 }
@@ -83,23 +84,27 @@ pub async fn list(
 /// `GET /api/v1/cot/events/{id}` — a single event.
 pub async fn get(
     State(state): State<AppState>,
-    _caller: AuthUser,
+    caller: AuthUser,
     Path(id): Path<Uuid>,
     headers: HeaderMap,
     Query(query): Query<FormatQuery>,
 ) -> Result<Response, AppError> {
-    let event = cot::find(&state.db, id).await?.ok_or(AppError::NotFound)?;
+    let owner = caller.event_owner_filter(state.config.event_visibility);
+    let event = cot::find(&state.db, id, owner)
+        .await?
+        .ok_or(AppError::NotFound)?;
     render_event(&event, wants_xml(query.format.as_deref(), &headers))
 }
 
 /// `GET /api/v1/cot/events/latest` — newest event per uid (the current picture).
 pub async fn latest(
     State(state): State<AppState>,
-    _caller: AuthUser,
+    caller: AuthUser,
     headers: HeaderMap,
     Query(query): Query<FormatQuery>,
 ) -> Result<Response, AppError> {
-    let events = cot::latest(&state.db, 500).await?;
+    let owner = caller.event_owner_filter(state.config.event_visibility);
+    let events = cot::latest(&state.db, 500, owner).await?;
     render_events(&events, wants_xml(query.format.as_deref(), &headers))
 }
 

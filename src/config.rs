@@ -19,6 +19,26 @@ impl ConfigError {
     }
 }
 
+/// Who may read a stored CoT event.
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum EventVisibility {
+    /// Every authenticated caller sees every event. This is the correct mode
+    /// for a single team sharing one situational picture (the TAK use case).
+    Shared,
+    /// Callers see only events they own. Admins still see everything.
+    Owner,
+}
+
+fn parse_event_visibility(value: &str) -> Result<EventVisibility, ConfigError> {
+    match value.trim().to_ascii_lowercase().as_str() {
+        "shared" => Ok(EventVisibility::Shared),
+        "owner" => Ok(EventVisibility::Owner),
+        other => Err(ConfigError::new(format!(
+            "EVENT_VISIBILITY must be \"shared\" or \"owner\", got `{other}`"
+        ))),
+    }
+}
+
 /// Application configuration.
 #[derive(Debug, Clone)]
 pub struct Config {
@@ -41,6 +61,8 @@ pub struct Config {
     pub cors_allowed_origins: Vec<String>,
     /// Run embedded migrations on startup.
     pub run_migrations: bool,
+    /// Who may read stored CoT events.
+    pub event_visibility: EventVisibility,
 }
 
 impl Config {
@@ -72,6 +94,13 @@ impl Config {
             ),
         };
 
+        // Secure by default: callers only see their own events unless the
+        // deployment explicitly opts into a shared team picture.
+        let event_visibility = match env::var("EVENT_VISIBILITY") {
+            Ok(value) => parse_event_visibility(&value)?,
+            Err(_) => EventVisibility::Owner,
+        };
+
         let cors_allowed_origins = env::var("CORS_ALLOWED_ORIGINS")
             .unwrap_or_default()
             .split(',')
@@ -90,6 +119,7 @@ impl Config {
             jwt_ttl_secs: parse_or("JWT_TTL_SECS", 86_400)?,
             cors_allowed_origins,
             run_migrations: parse_or("RUN_MIGRATIONS", true)?,
+            event_visibility,
         })
     }
 
@@ -116,5 +146,23 @@ where
             .parse()
             .map_err(|err| ConfigError::new(format!("{key} has an invalid value: {err}"))),
         Err(_) => Ok(default),
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn parses_event_visibility() {
+        assert_eq!(
+            parse_event_visibility("shared").unwrap(),
+            EventVisibility::Shared
+        );
+        assert_eq!(
+            parse_event_visibility(" OWNER ").unwrap(),
+            EventVisibility::Owner
+        );
+        assert!(parse_event_visibility("everyone").is_err());
     }
 }

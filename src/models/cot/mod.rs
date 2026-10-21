@@ -565,17 +565,20 @@ pub async fn list(
     limit: i64,
     since: Option<DateTime<Utc>>,
     uid: Option<&str>,
+    owner: Option<Uuid>,
 ) -> Result<Vec<CotEvent>, AppError> {
     let sql = format!(
         "select {COLUMNS} from cot_events \
          where ($1::timestamptz is null or send_time >= $1) \
            and ($2::text is null or uid = $2) \
-         order by send_time desc limit $3"
+           and ($3::uuid is null or owner_id = $3) \
+         order by send_time desc limit $4"
     );
 
     let rows = sqlx::query_as::<_, CotEventRow>(sqlx::AssertSqlSafe(sql))
         .bind(since)
         .bind(uid)
+        .bind(owner)
         .bind(limit)
         .fetch_all(pool)
         .await?;
@@ -584,11 +587,19 @@ pub async fn list(
 }
 
 /// Fetch a single event by id.
-pub async fn find(pool: &PgPool, id: Uuid) -> Result<Option<CotEvent>, AppError> {
-    let sql = format!("select {COLUMNS} from cot_events where id = $1");
+pub async fn find(
+    pool: &PgPool,
+    id: Uuid,
+    owner: Option<Uuid>,
+) -> Result<Option<CotEvent>, AppError> {
+    let sql = format!(
+        "select {COLUMNS} from cot_events \
+         where id = $1 and ($2::uuid is null or owner_id = $2)"
+    );
 
     let row = sqlx::query_as::<_, CotEventRow>(sqlx::AssertSqlSafe(sql))
         .bind(id)
+        .bind(owner)
         .fetch_optional(pool)
         .await?;
 
@@ -596,15 +607,21 @@ pub async fn find(pool: &PgPool, id: Uuid) -> Result<Option<CotEvent>, AppError>
 }
 
 /// Current situational picture: the newest event for each uid.
-pub async fn latest(pool: &PgPool, limit: i64) -> Result<Vec<CotEvent>, AppError> {
+pub async fn latest(
+    pool: &PgPool,
+    limit: i64,
+    owner: Option<Uuid>,
+) -> Result<Vec<CotEvent>, AppError> {
     let sql = format!(
         "select * from ( \
             select distinct on (uid) {COLUMNS} from cot_events \
+            where ($1::uuid is null or owner_id = $1) \
             order by uid, send_time desc \
-         ) latest order by send_time desc limit $1"
+         ) latest order by send_time desc limit $2"
     );
 
     let rows = sqlx::query_as::<_, CotEventRow>(sqlx::AssertSqlSafe(sql))
+        .bind(owner)
         .bind(limit)
         .fetch_all(pool)
         .await?;

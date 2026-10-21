@@ -120,7 +120,7 @@ configuration and the security model.
 | POST   | `/api/v1/auth/register`         | —    | Create an operator, return a JWT         |
 | POST   | `/api/v1/auth/login`            | —    | Exchange credentials for a JWT           |
 | GET    | `/api/v1/auth/me`               | ✔    | Current operator                         |
-| GET    | `/api/v1/users`                 | ✔    | Operator directory                       |
+| GET    | `/api/v1/users`                 | admin | Operator directory (admin only)          |
 | POST   | `/api/v1/cot/events`            | ✔    | Submit a CoT event (JSON or XML)         |
 | GET    | `/api/v1/cot/events`            | ✔    | Event feed, newest first (`?since=&uid=&limit=&format=xml`) |
 | GET    | `/api/v1/cot/events/latest`     | ✔    | Newest event per `uid` (current picture) |
@@ -276,6 +276,7 @@ deploy. Machines are health-checked at `/health` and scale to zero when idle.
 | `DB_MAX_CONNECTIONS`             | `5`            | Pool size                                          |
 | `DB_DISABLE_PREPARED_STATEMENTS` | `false`        | Set `true` for Supavisor transaction mode (6543)   |
 | `RUN_MIGRATIONS`                 | `true`         | Apply migrations on startup                        |
+| `EVENT_VISIBILITY`               | `owner`        | `owner` = only your events; `shared` = whole team  |
 | `CORS_ALLOWED_ORIGINS`           | *(empty)*      | Comma-separated origins; empty = permissive (dev)  |
 | `RUST_LOG`                       | `info`         | `tracing` filter directives                        |
 
@@ -285,6 +286,14 @@ deploy. Machines are health-checked at `/health` and scale to zero when idle.
   never serialized.
 - JWTs are validated for signature, algorithm and expiry. Any verification
   failure returns an indistinguishable `401`.
+- The token subject is **revalidated against the live account on every
+  request**, so a deleted account or a changed role takes effect immediately
+  instead of when the token expires. The role in the token is ignored.
+- CoT reads are authorization-scoped by `EVENT_VISIBILITY`: `owner` (default)
+  limits `list`, `latest` and `{id}` lookups to the caller's own events, while
+  `shared` exposes the team picture. Admins always see everything.
+- The operator directory is admin-only, so ordinary operators cannot enumerate
+  account emails.
 - Login and bad-token paths share the same response, avoiding account
   enumeration; emails are stored canonically (lower-cased).
 - Internal errors are logged server-side and surfaced as a generic `500`;

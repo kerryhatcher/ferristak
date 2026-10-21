@@ -10,6 +10,9 @@ primary_region = "ord"
 
 [env]
   BIND_ADDR = "0.0.0.0:8080"
+  # One team sharing one situational picture. Set to "owner" to isolate each
+  # account to its own events (the code default) instead.
+  EVENT_VISIBILITY = "shared"
   # Migrations are executed by the release_command below, so don't run them
   # on every machine boot.
   RUN_MIGRATIONS = "false"
