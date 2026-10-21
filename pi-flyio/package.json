@@ -1,0 +1,20 @@
+{
+  "name": "pi-flyio",
+  "version": "0.1.0",
+  "description": "Pi package for Fly.io: registers the official Fly MCP server, plus skills, prompts and references for working on Fly.io projects.",
+  "type": "module",
+  "keywords": ["pi-package", "flyio", "fly", "mcp", "deployment"],
+  "license": "MIT",
+  "homepage": "https://fly.io/docs/",
+  "pi": {
+    "extensions": ["./extensions/flyio.ts"],
+    "skills": ["./skills"],
+    "prompts": ["./prompts/*.md"]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "scripts": {
+    "gen:catalog": "python3 scripts/gen-fly-mcp-catalog.py"
+  }
+}

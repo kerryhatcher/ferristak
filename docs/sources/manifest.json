@@ -1,0 +1,1544 @@
+{
+  "retrieved": "2026-10-21",
+  "files": [
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "INTENT.md",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/INTENT.md",
+      "local_path": "docs/sources/Server/INTENT.md",
+      "bytes": 857,
+      "sha256": "3e63a5bd652a8416a878b96e194e4d993fd186eaf2870ba0f9232c4cf514af9c"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "LICENSE.md",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/LICENSE.md",
+      "local_path": "docs/sources/Server/LICENSE.md",
+      "bytes": 160065,
+      "sha256": "a9d4e51e934ba0174dc6af02cc060dfba2f6258292fd48379d01f28ba2b0964c"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/LICENSE.txt",
+      "local_path": "docs/sources/Server/LICENSE.txt",
+      "bytes": 231044,
+      "sha256": "076fd1a45e110306379b2b7377f8a0510f501ce1a3399b9c5a5266b1b15b7d73"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "README.md",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/README.md",
+      "local_path": "docs/sources/Server/README.md",
+      "bytes": 10657,
+      "sha256": "a87bb214f591a102df6574feda2ac471fce72378b9c360e6d0f74a1fc1071ff6"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "VERSION.md",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/VERSION.md",
+      "local_path": "docs/sources/Server/VERSION.md",
+      "bytes": 2805,
+      "sha256": "9afa4c3d86119dc863bd524ac07c0352ce727e9f9a9e7960a118f3370275ed17"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/docs/TAK_Server_Configuration_Guide.pdf",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/docs/TAK_Server_Configuration_Guide.pdf",
+      "local_path": "docs/pdfs/TAK_Server_Configuration_Guide.pdf",
+      "bytes": 5516693,
+      "sha256": "84a6424b093396f8315c4761999c9bad4019455828e8da6d0fb01b1a114295bd"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-common/src/main/java/com/bbn/marti/remote/groups/Group.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-common/src/main/java/com/bbn/marti/remote/groups/Group.java",
+      "local_path": "docs/sources/Server/src/takserver-common/src/main/java/com/bbn/marti/remote/groups/Group.java",
+      "bytes": 7345,
+      "sha256": "b70bf10a6be77e5189a025db6f5b0857faf7e083b6d2ad8e85f902751676ce4f"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-common/src/main/java/com/bbn/marti/remote/groups/GroupManager.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-common/src/main/java/com/bbn/marti/remote/groups/GroupManager.java",
+      "local_path": "docs/sources/Server/src/takserver-common/src/main/java/com/bbn/marti/remote/groups/GroupManager.java",
+      "bytes": 5914,
+      "sha256": "9466145c067ed82d62820723f08b1758ca74ea7c25b8e5f64013f7e230bc220f"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-common/src/main/xsd/CoreConfig.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-common/src/main/xsd/CoreConfig.xsd",
+      "local_path": "docs/sources/Server/src/takserver-common/src/main/xsd/CoreConfig.xsd",
+      "bytes": 77728,
+      "sha256": "368b603d4f39417810f707133624a3b41e590366fb3bca460c48bd861a176cff"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-common/src/main/xsd/UserAuthenticationFile.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-common/src/main/xsd/UserAuthenticationFile.xsd",
+      "local_path": "docs/sources/Server/src/takserver-common/src/main/xsd/UserAuthenticationFile.xsd",
+      "bytes": 1961,
+      "sha256": "c5c73aef6346ab10d42ea1ad5948a6414a1c1681d147555fd55f81d2af19e367"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/example/CoreConfig.example.xml",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/example/CoreConfig.example.xml",
+      "local_path": "docs/sources/Server/src/takserver-core/example/CoreConfig.example.xml",
+      "bytes": 7149,
+      "sha256": "e4d5f50e973e5abf11512f81ec62c50bd2abe9fce080b33abd04726cc870cea3"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/src/main/java/com/bbn/marti/nio/protocol/connections/StreamingCotProtocol.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/src/main/java/com/bbn/marti/nio/protocol/connections/StreamingCotProtocol.java",
+      "local_path": "docs/sources/Server/src/takserver-core/src/main/java/com/bbn/marti/nio/protocol/connections/StreamingCotProtocol.java",
+      "bytes": 9574,
+      "sha256": "37291afeeda3847eec370cb14360579e20a8b3dac9dfd867b6222106c1dd16b5"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/src/main/java/com/bbn/marti/nio/protocol/connections/StreamingProtoBufOrCoTProtocol.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/src/main/java/com/bbn/marti/nio/protocol/connections/StreamingProtoBufOrCoTProtocol.java",
+      "local_path": "docs/sources/Server/src/takserver-core/src/main/java/com/bbn/marti/nio/protocol/connections/StreamingProtoBufOrCoTProtocol.java",
+      "bytes": 10967,
+      "sha256": "e01564fe3ac1a28769511464de81ef803b57c1aa4cf1197fc60faf692b6a4816"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/src/main/java/com/bbn/marti/nio/protocol/connections/TakProtoBufProtocol.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/src/main/java/com/bbn/marti/nio/protocol/connections/TakProtoBufProtocol.java",
+      "local_path": "docs/sources/Server/src/takserver-core/src/main/java/com/bbn/marti/nio/protocol/connections/TakProtoBufProtocol.java",
+      "bytes": 5608,
+      "sha256": "c943c93001d8b5ee2d9550f55ad1f1d881e926277e7f0aaa2fd792012786cc90"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/src/main/webapp/Marti/documentation/fedhub/configuration/certificates/index.html",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/src/main/webapp/Marti/documentation/fedhub/configuration/certificates/index.html",
+      "local_path": "docs/sources/Server/src/takserver-core/src/main/webapp/Marti/documentation/fedhub/configuration/certificates/index.html",
+      "bytes": 15929,
+      "sha256": "82f1e058dac312163fe44b71c61eb390dbc1b750a5425265413cb41144c2c243"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/src/main/webapp/Marti/documentation/fedhub/docker-installation/certificates/index.html",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/src/main/webapp/Marti/documentation/fedhub/docker-installation/certificates/index.html",
+      "local_path": "docs/sources/Server/src/takserver-core/src/main/webapp/Marti/documentation/fedhub/docker-installation/certificates/index.html",
+      "bytes": 20701,
+      "sha256": "db9336db745bca5ef2a57b6b06450bb201486894350f866bd405fee6d8c802fd"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/src/main/webapp/Marti/documentation/fedhub/how-to-use/certificate-manager/index.html",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/src/main/webapp/Marti/documentation/fedhub/how-to-use/certificate-manager/index.html",
+      "local_path": "docs/sources/Server/src/takserver-core/src/main/webapp/Marti/documentation/fedhub/how-to-use/certificate-manager/index.html",
+      "bytes": 13945,
+      "sha256": "706dbd261fa1744c59d590f179b84df384bc21cd2fabc298fc969855c9e82059"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/src/main/webapp/Marti/documentation/takserver/configuration/groupassignmentbyinput/index.html",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/src/main/webapp/Marti/documentation/takserver/configuration/groupassignmentbyinput/index.html",
+      "local_path": "docs/sources/Server/src/takserver-core/src/main/webapp/Marti/documentation/takserver/configuration/groupassignmentbyinput/index.html",
+      "bytes": 24046,
+      "sha256": "b727d57bd05ac2432816715f3001df641f9dfa25f9ce61a64c02e2c73b0a9282"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/src/main/webapp/Marti/documentation/takserver/configuration/groupassignmentusingauth/index.html",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/src/main/webapp/Marti/documentation/takserver/configuration/groupassignmentusingauth/index.html",
+      "local_path": "docs/sources/Server/src/takserver-core/src/main/webapp/Marti/documentation/takserver/configuration/groupassignmentusingauth/index.html",
+      "bytes": 21333,
+      "sha256": "6f102bd5b8de80a099de681fe453c81e8f0ac90af9c1c659d8ca3c7f56a04c6a"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/src/main/webapp/Marti/documentation/takserver/configuration/groupassignmentusingclientcerts/index.html",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/src/main/webapp/Marti/documentation/takserver/configuration/groupassignmentusingclientcerts/index.html",
+      "local_path": "docs/sources/Server/src/takserver-core/src/main/webapp/Marti/documentation/takserver/configuration/groupassignmentusingclientcerts/index.html",
+      "bytes": 24108,
+      "sha256": "e384f39b09d6d5d975c2014ee035ec05a7597ea01981fe2558601f68d70ef6e5"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/src/main/webapp/Marti/documentation/takserver/configuration/groupfiltering/index.html",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/src/main/webapp/Marti/documentation/takserver/configuration/groupfiltering/index.html",
+      "local_path": "docs/sources/Server/src/takserver-core/src/main/webapp/Marti/documentation/takserver/configuration/groupfiltering/index.html",
+      "bytes": 19754,
+      "sha256": "0ee3311a7be3b4a44cb87ba555c395167abc03feb1ddbe8f789e03c9f0aefc2d"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/src/main/webapp/Marti/documentation/takserver/federation/datapackagemissionfileblocker/index.html",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/src/main/webapp/Marti/documentation/takserver/federation/datapackagemissionfileblocker/index.html",
+      "local_path": "docs/sources/Server/src/takserver-core/src/main/webapp/Marti/documentation/takserver/federation/datapackagemissionfileblocker/index.html",
+      "bytes": 19908,
+      "sha256": "84be75bd6e6a4b50c37485799e9f474672decb6e56cfff50ecfec257ec9e40dc"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/src/main/webapp/Marti/documentation/takserver/federation/enablefederation/index.html",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/src/main/webapp/Marti/documentation/takserver/federation/enablefederation/index.html",
+      "local_path": "docs/sources/Server/src/takserver-core/src/main/webapp/Marti/documentation/takserver/federation/enablefederation/index.html",
+      "bytes": 18547,
+      "sha256": "34cfb214b07499ea06318d34e0090c65c0cfef2df38235a2c6230ff82910eacf"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/src/main/webapp/Marti/documentation/takserver/federation/federatedgroupmapping/index.html",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/src/main/webapp/Marti/documentation/takserver/federation/federatedgroupmapping/index.html",
+      "local_path": "docs/sources/Server/src/takserver-core/src/main/webapp/Marti/documentation/takserver/federation/federatedgroupmapping/index.html",
+      "bytes": 19092,
+      "sha256": "742891aa46baabf8b60abd9f21d0157773b3fa0afe086155147330fcbda66427"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/src/main/webapp/Marti/documentation/takserver/federation/federationdisruptiontolerance/index.html",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/src/main/webapp/Marti/documentation/takserver/federation/federationdisruptiontolerance/index.html",
+      "local_path": "docs/sources/Server/src/takserver-core/src/main/webapp/Marti/documentation/takserver/federation/federationdisruptiontolerance/index.html",
+      "bytes": 20670,
+      "sha256": "b061dd5dca9d1ac4e35061e4bcc0f527d27ed017c4913ddce5979553fbd4e4b1"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/src/main/webapp/Marti/documentation/takserver/federation/federationexample/index.html",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/src/main/webapp/Marti/documentation/takserver/federation/federationexample/index.html",
+      "local_path": "docs/sources/Server/src/takserver-core/src/main/webapp/Marti/documentation/takserver/federation/federationexample/index.html",
+      "bytes": 21655,
+      "sha256": "077204c384d4dec8ac55a50ac5ee54dab281ecf4fab67a954741d967d1542351"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/src/main/webapp/Marti/documentation/takserver/federation/maketheconnection/index.html",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/src/main/webapp/Marti/documentation/takserver/federation/maketheconnection/index.html",
+      "local_path": "docs/sources/Server/src/takserver-core/src/main/webapp/Marti/documentation/takserver/federation/maketheconnection/index.html",
+      "bytes": 20947,
+      "sha256": "fdece005a5b03d01386d96a268e8208c3e0ca1c80709dc4ab36ec29b9f9947ab"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/src/main/webapp/Marti/documentation/takserver/federation/overview/index.html",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/src/main/webapp/Marti/documentation/takserver/federation/overview/index.html",
+      "local_path": "docs/sources/Server/src/takserver-core/src/main/webapp/Marti/documentation/takserver/federation/overview/index.html",
+      "bytes": 18847,
+      "sha256": "59d9f33e68804f86e508357496b64faffd2b29acc2c6e98a456c660acdac2b55"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/src/main/webapp/Marti/documentation/takserver/federation/tokens/index.html",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/src/main/webapp/Marti/documentation/takserver/federation/tokens/index.html",
+      "local_path": "docs/sources/Server/src/takserver-core/src/main/webapp/Marti/documentation/takserver/federation/tokens/index.html",
+      "bytes": 21588,
+      "sha256": "d2fdbd33f1c5e051c336ed3bcb7ff4daf426921e62daa07b8e5fee8f721c90fe"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/src/main/webapp/Marti/documentation/takserver/federation/uploadfederatecert/index.html",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/src/main/webapp/Marti/documentation/takserver/federation/uploadfederatecert/index.html",
+      "local_path": "docs/sources/Server/src/takserver-core/src/main/webapp/Marti/documentation/takserver/federation/uploadfederatecert/index.html",
+      "bytes": 19946,
+      "sha256": "e5a30aaf85dbf62b67871828e436e2ff253baefc3ca7514397adfeedeaf3f30f"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/src/main/webapp/Marti/documentation/takserver/groupfilteringformulticast/index.html",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/src/main/webapp/Marti/documentation/takserver/groupfilteringformulticast/index.html",
+      "local_path": "docs/sources/Server/src/takserver-core/src/main/webapp/Marti/documentation/takserver/groupfilteringformulticast/index.html",
+      "bytes": 20112,
+      "sha256": "82a496ca39449a8ee75b4c255b1485fe9e5510e160ce0e07985d1873c5d302d1"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/takserver-war/src/main/java/com/bbn/marti/device/profile/api/ProfileAPI.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/device/profile/api/ProfileAPI.java",
+      "local_path": "docs/sources/Server/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/device/profile/api/ProfileAPI.java",
+      "bytes": 10768,
+      "sha256": "365116b27b76f865b423da7993c0021d191f81451455314908a5062067a8fed5"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/takserver-war/src/main/java/com/bbn/marti/device/profile/api/ProfileAdminAPI.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/device/profile/api/ProfileAdminAPI.java",
+      "local_path": "docs/sources/Server/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/device/profile/api/ProfileAdminAPI.java",
+      "bytes": 15527,
+      "sha256": "b3cfe76372554c03488b963bf6c583dcf5fffdd8c3252f9db72a59757d3445e3"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/api/ContactsApi.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/api/ContactsApi.java",
+      "local_path": "docs/sources/Server/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/api/ContactsApi.java",
+      "bytes": 9084,
+      "sha256": "f68ff6ae14e1077ae86365722862fb328a0457990d211b625bd616e0484d8f6a"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/api/CopViewApi.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/api/CopViewApi.java",
+      "local_path": "docs/sources/Server/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/api/CopViewApi.java",
+      "bytes": 4506,
+      "sha256": "127d5f7233782577d391450a443ac8f101be047cbb7ff56ae3705e396531c5e8"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/api/CotApi.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/api/CotApi.java",
+      "local_path": "docs/sources/Server/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/api/CotApi.java",
+      "bytes": 11881,
+      "sha256": "7a76c2bb7ad9504c74cc772fd2fa739eb1830148dd124a66a7cb66136149531b"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/api/MissionApi.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/api/MissionApi.java",
+      "local_path": "docs/sources/Server/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/api/MissionApi.java",
+      "bytes": 204423,
+      "sha256": "6c1f290baf5a111dd19a357e61d515d90912896bc43e33b01e479b507920ec44"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/api/PropertiesApi.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/api/PropertiesApi.java",
+      "local_path": "docs/sources/Server/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/api/PropertiesApi.java",
+      "bytes": 4918,
+      "sha256": "a49b966afa31aa4ceaef989288fbaa09cc2e6c2dfc58e98258235f8475024490"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/api/SequenceApi.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/api/SequenceApi.java",
+      "local_path": "docs/sources/Server/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/api/SequenceApi.java",
+      "bytes": 1935,
+      "sha256": "25235a38aa4d499b96073ab95a9210deb273020229e4e2be9935eb6a6c2cc252"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/api/SubscriptionApi.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/api/SubscriptionApi.java",
+      "local_path": "docs/sources/Server/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/api/SubscriptionApi.java",
+      "bytes": 40652,
+      "sha256": "53c90bae231640b5820ed85ed9f2980c151a1f58e71f234c98e22f6451a35f89"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/api/SubscriptionSortField.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/api/SubscriptionSortField.java",
+      "local_path": "docs/sources/Server/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/api/SubscriptionSortField.java",
+      "bytes": 89,
+      "sha256": "48d2e56aa423ad26b89c684e6d4ac7442afb74a6ce9be5c6583545ebe47a580e"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/api/SubscriptionSortOrder.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/api/SubscriptionSortOrder.java",
+      "local_path": "docs/sources/Server/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/api/SubscriptionSortOrder.java",
+      "bytes": 97,
+      "sha256": "705c8f40278637e3fba3f4ecccf5f692822d927a5efdf8d73fff1a815a9e7cc0"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/takserver-war/src/main/java/com/bbn/marti/util/cert/exception/NotFoundException.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/util/cert/exception/NotFoundException.java",
+      "local_path": "docs/sources/Server/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/util/cert/exception/NotFoundException.java",
+      "bytes": 619,
+      "sha256": "3ca0cd76b63d43d621d4e0866f24c0cfd9e14adc7b4961c9cf24c83a2cddac85"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/takserver-war/src/main/java/com/bbn/marti/util/missionpackage/mp.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/util/missionpackage/mp.xsd",
+      "local_path": "docs/sources/Server/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/util/missionpackage/mp.xsd",
+      "bytes": 1594,
+      "sha256": "e8a0a51319406c78c696ab1f0367a9b9365abd198186848957eaeef74a3e2758"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-protobuf/src/main/proto/binarypayload.proto",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-protobuf/src/main/proto/binarypayload.proto",
+      "local_path": "docs/sources/Server/src/takserver-protobuf/src/main/proto/binarypayload.proto",
+      "bytes": 443,
+      "sha256": "073979560b562a658bc2bb515fbcb68de03092c2bdc993eba9a989918013a992"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-protobuf/src/main/proto/contact.proto",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-protobuf/src/main/proto/contact.proto",
+      "local_path": "docs/sources/Server/src/takserver-protobuf/src/main/proto/contact.proto",
+      "bytes": 382,
+      "sha256": "09b9b0f72889b39bab588d6b6195a79509fc366dc3c1d0e91b54c9cfa8fbaad0"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-protobuf/src/main/proto/cotevent.proto",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-protobuf/src/main/proto/cotevent.proto",
+      "local_path": "docs/sources/Server/src/takserver-protobuf/src/main/proto/cotevent.proto",
+      "bytes": 2451,
+      "sha256": "14fc114392ab4173e928b421056c4dd7fa670658a87aed76cc7f12b5f4026fb6"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-protobuf/src/main/proto/detail.proto",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-protobuf/src/main/proto/detail.proto",
+      "local_path": "docs/sources/Server/src/takserver-protobuf/src/main/proto/detail.proto",
+      "bytes": 2725,
+      "sha256": "4f650366021fd552124a068395a3aa6879a59de745409993d63b2fd118b8c5e0"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-protobuf/src/main/proto/fig.proto",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-protobuf/src/main/proto/fig.proto",
+      "local_path": "docs/sources/Server/src/takserver-protobuf/src/main/proto/fig.proto",
+      "bytes": 4950,
+      "sha256": "7b807a2570ed34fd1a779b2cfda7e6087b48869519a01eeeca1ddbab4d643900"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-protobuf/src/main/proto/group.proto",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-protobuf/src/main/proto/group.proto",
+      "local_path": "docs/sources/Server/src/takserver-protobuf/src/main/proto/group.proto",
+      "bytes": 364,
+      "sha256": "586663754ecdaf6a41e8346b89dc14576a5d3db229297d532067611a0dc71c96"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-protobuf/src/main/proto/message.proto",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-protobuf/src/main/proto/message.proto",
+      "local_path": "docs/sources/Server/src/takserver-protobuf/src/main/proto/message.proto",
+      "bytes": 640,
+      "sha256": "1b410d5a37e180a227e22399e337f3982ccb87aa320e008d11db6b087888c600"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-protobuf/src/main/proto/missionannouncement.proto",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-protobuf/src/main/proto/missionannouncement.proto",
+      "local_path": "docs/sources/Server/src/takserver-protobuf/src/main/proto/missionannouncement.proto",
+      "bytes": 430,
+      "sha256": "7f082a8db6d07e173bfa4670fbafda24c951371fe0a6b3bb044e13cdaf95fdee"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-protobuf/src/main/proto/precisionlocation.proto",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-protobuf/src/main/proto/precisionlocation.proto",
+      "local_path": "docs/sources/Server/src/takserver-protobuf/src/main/proto/precisionlocation.proto",
+      "bytes": 393,
+      "sha256": "76ea0454857f5646d1207a9544f94109ea417b9afe4ac76e3062aa53bbb16569"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-protobuf/src/main/proto/status.proto",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-protobuf/src/main/proto/status.proto",
+      "local_path": "docs/sources/Server/src/takserver-protobuf/src/main/proto/status.proto",
+      "bytes": 330,
+      "sha256": "ff0257fcf1ff37268261c3cad3688cdce368856f614444fe43adb2b408e2e69d"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-protobuf/src/main/proto/streaminginput.proto",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-protobuf/src/main/proto/streaminginput.proto",
+      "local_path": "docs/sources/Server/src/takserver-protobuf/src/main/proto/streaminginput.proto",
+      "bytes": 732,
+      "sha256": "eef63c85cd20ce70ff95b223083f330308314269ca3413c14b8c352f8524c3df"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-protobuf/src/main/proto/takcontrol.proto",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-protobuf/src/main/proto/takcontrol.proto",
+      "local_path": "docs/sources/Server/src/takserver-protobuf/src/main/proto/takcontrol.proto",
+      "bytes": 504,
+      "sha256": "12a2fed9d08e3a8f8cc20cddab667ea24a73dfdfaea0bde6fdb07e10001d306e"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-protobuf/src/main/proto/takmessage.proto",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-protobuf/src/main/proto/takmessage.proto",
+      "local_path": "docs/sources/Server/src/takserver-protobuf/src/main/proto/takmessage.proto",
+      "bytes": 470,
+      "sha256": "5e579944082e5d09ca6c2fc172cdcf89ddcbe4cf33e9b9a9ee7e9187a57b98a6"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-protobuf/src/main/proto/takv.proto",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-protobuf/src/main/proto/takv.proto",
+      "local_path": "docs/sources/Server/src/takserver-protobuf/src/main/proto/takv.proto",
+      "bytes": 468,
+      "sha256": "44e4729b876c6548a0a9a64ab3190f6e94fdc9836fc6274847db09141afc82f0"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-protobuf/src/main/proto/track.proto",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-protobuf/src/main/proto/track.proto",
+      "local_path": "docs/sources/Server/src/takserver-protobuf/src/main/proto/track.proto",
+      "bytes": 369,
+      "sha256": "5e7c27511ab1d20e78abf43348bb00b037e560fabbbaa57ccf5b1cd3cf575a56"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "LICENSE.md",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/LICENSE.md",
+      "local_path": "docs/sources/atak-civ/LICENSE.md",
+      "bytes": 55947,
+      "sha256": "3db8b919e1f1cb3dff5114ea875d3a758ff367e6490622780d0f7092daebd8f9"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "README.md",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/README.md",
+      "local_path": "docs/sources/atak-civ/README.md",
+      "bytes": 1853,
+      "sha256": "864ae7cded20611a0ecd5002153ee004303c23b71216df910d3d0355b12898fb"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "atak/ATAK/app/src/main/java/com/atakmap/android/missionpackage/http/rest/GetFileTransferOperation.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/atak/ATAK/app/src/main/java/com/atakmap/android/missionpackage/http/rest/GetFileTransferOperation.java",
+      "local_path": "docs/sources/atak-civ/atak/ATAK/app/src/main/java/com/atakmap/android/missionpackage/http/rest/GetFileTransferOperation.java",
+      "bytes": 23297,
+      "sha256": "e1ae01099620e1143c0c25e6cca22da318d758bd9ee532e17cd631e0696f3c86"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "atak/ATAK/app/src/main/java/com/atakmap/net/CertificateConfigRequest.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/atak/ATAK/app/src/main/java/com/atakmap/net/CertificateConfigRequest.java",
+      "local_path": "docs/sources/atak-civ/atak/ATAK/app/src/main/java/com/atakmap/net/CertificateConfigRequest.java",
+      "bytes": 4065,
+      "sha256": "525d5119d1869e95ca1e7592f497ba98b3dd2d37cbf82527a189150f93441c05"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "atak/ATAK/app/src/main/java/com/atakmap/net/CertificateEnrollmentClient.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/atak/ATAK/app/src/main/java/com/atakmap/net/CertificateEnrollmentClient.java",
+      "local_path": "docs/sources/atak-civ/atak/ATAK/app/src/main/java/com/atakmap/net/CertificateEnrollmentClient.java",
+      "bytes": 35131,
+      "sha256": "9fc7def7775eafb32965a62517e149c270f07316989cd7233e7f73e2ecd2fbde"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "commoncommo/core/impl/cotmessage.cpp",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/commoncommo/core/impl/cotmessage.cpp",
+      "local_path": "docs/sources/atak-civ/commoncommo/core/impl/cotmessage.cpp",
+      "bytes": 77643,
+      "sha256": "518dd49c7ba28f671c27e374ee140d0050283330605469076ab659cce0b9813e"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "commoncommo/core/impl/enrollmentmanager.cpp",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/commoncommo/core/impl/enrollmentmanager.cpp",
+      "local_path": "docs/sources/atak-civ/commoncommo/core/impl/enrollmentmanager.cpp",
+      "bytes": 35223,
+      "sha256": "c6c2ec4c99011fbefae1043a1ff4f896776020bf2fbee4601c8d7b8a53e03f9c"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "commoncommo/core/impl/missionpackagemanager.cpp",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/commoncommo/core/impl/missionpackagemanager.cpp",
+      "local_path": "docs/sources/atak-civ/commoncommo/core/impl/missionpackagemanager.cpp",
+      "bytes": 103062,
+      "sha256": "3ac6374be7d180ff116c04dc8aed0b34d27a9cb3ab2bd897e29ca7bbea335f8c"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "commoncommo/core/impl/streamingsocketmanagement.cpp",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/commoncommo/core/impl/streamingsocketmanagement.cpp",
+      "local_path": "docs/sources/atak-civ/commoncommo/core/impl/streamingsocketmanagement.cpp",
+      "bytes": 99027,
+      "sha256": "51f05f07a8749bdea77c4542b2d1052df1c229d92836e9fb3f3e57b830feb5c7"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "commoncommo/core/impl/takmessage.cpp",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/commoncommo/core/impl/takmessage.cpp",
+      "local_path": "docs/sources/atak-civ/commoncommo/core/impl/takmessage.cpp",
+      "bytes": 9762,
+      "sha256": "5c36b353c9f8f8d0e7cdd43b2105ec79fb7dedb3f29c1189c5c659d87dd51c5e"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "commoncommo/core/impl/takmessage.h",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/commoncommo/core/impl/takmessage.h",
+      "local_path": "docs/sources/atak-civ/commoncommo/core/impl/takmessage.h",
+      "bytes": 4743,
+      "sha256": "3c2d8af51299076e48c9e1765fd36695eb59f0e3cecd712eca112b46fe5af80a"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/mitre/CoT Base-Event Schema  (PUBLIC RELEASE).xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/mitre/CoT%20Base-Event%20Schema%20%20%28PUBLIC%20RELEASE%29.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/mitre/CoT Base-Event Schema  (PUBLIC RELEASE).xsd",
+      "bytes": 22895,
+      "sha256": "4ab1ce0f7e5d3f5396f0b3e19b993e68847dabf5f4e3f37af0b7cb0235d31983"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/mitre/CoT Contact Schema (PUBLIC RELEASE).xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/mitre/CoT%20Contact%20Schema%20%28PUBLIC%20RELEASE%29.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/mitre/CoT Contact Schema (PUBLIC RELEASE).xsd",
+      "bytes": 3214,
+      "sha256": "ada3f88e7168b4953b142c115390136213df3cde0794103d013c8cb7e22420f4"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/mitre/CoT Flow-Tags Schema  (PUBLIC RELEASE).xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/mitre/CoT%20Flow-Tags%20Schema%20%20%28PUBLIC%20RELEASE%29.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/mitre/CoT Flow-Tags Schema  (PUBLIC RELEASE).xsd",
+      "bytes": 2032,
+      "sha256": "e5ac9be0a6357a92087fa78792b85c414c3653328dfdf22bcc9404d4b99a03e5"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/mitre/CoT Image Schema  (PUBLIC RELEASE).xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/mitre/CoT%20Image%20Schema%20%20%28PUBLIC%20RELEASE%29.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/mitre/CoT Image Schema  (PUBLIC RELEASE).xsd",
+      "bytes": 8577,
+      "sha256": "5433cef5c8bb6e93a522f7e261daeda64388d0f393fa70594f4155d63193fb1c"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/mitre/CoT Link Schema  (PUBLIC RELEASE).xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/mitre/CoT%20Link%20Schema%20%20%28PUBLIC%20RELEASE%29.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/mitre/CoT Link Schema  (PUBLIC RELEASE).xsd",
+      "bytes": 4501,
+      "sha256": "cdae04fee262cd1de5394698be31a26b35e7be76361e4152c0e7159953164f28"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/mitre/CoT Remarks Schema  (PUBLIC RELEASE).xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/mitre/CoT%20Remarks%20Schema%20%20%28PUBLIC%20RELEASE%29.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/mitre/CoT Remarks Schema  (PUBLIC RELEASE).xsd",
+      "bytes": 3767,
+      "sha256": "b95d484f7251fce801036d665df6e45b2994826b19d4b759155ee85cbc394ce3"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/mitre/CoT Request Schema  (PUBLIC RELEASE).xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/mitre/CoT%20Request%20Schema%20%20%28PUBLIC%20RELEASE%29.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/mitre/CoT Request Schema  (PUBLIC RELEASE).xsd",
+      "bytes": 3932,
+      "sha256": "5caae15962b1287b9702304dc72eab38ce734e2e659db6a214c82373948eb433"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/mitre/CoT Sensor Schema  (PUBLIC RELEASE).xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/mitre/CoT%20Sensor%20Schema%20%20%28PUBLIC%20RELEASE%29.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/mitre/CoT Sensor Schema  (PUBLIC RELEASE).xsd",
+      "bytes": 6834,
+      "sha256": "d6a4d8fc69c1fabc546499f10d1ef9d2da81f1d6be9726a80617161217ed8534"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/mitre/CoT Shape Schema  (PUBLIC RELEASE).xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/mitre/CoT%20Shape%20Schema%20%20%28PUBLIC%20RELEASE%29.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/mitre/CoT Shape Schema  (PUBLIC RELEASE).xsd",
+      "bytes": 10348,
+      "sha256": "d0d7849defc08ae452c3de1a67863c7f991ef8638980e60d89447c510a8c9a93"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/mitre/CoT Spatial Schema  (PUBLIC RELEASE).xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/mitre/CoT%20Spatial%20Schema%20%20%28PUBLIC%20RELEASE%29.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/mitre/CoT Spatial Schema  (PUBLIC RELEASE).xsd",
+      "bytes": 7877,
+      "sha256": "0ea089a41cb5092dc11c75c4ba752f962f098dfb928a6c7d26af7270599a8f5a"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/mitre/CoT Track Schema  (PUBLIC RELEASE).xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/mitre/CoT%20Track%20Schema%20%20%28PUBLIC%20RELEASE%29.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/mitre/CoT Track Schema  (PUBLIC RELEASE).xsd",
+      "bytes": 4770,
+      "sha256": "495c50036adca7416ce71ad87e1cd5b2aefe8648188eb402dac695651ba5773d"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/mitre/CoT Uid Schema  (PUBLIC RELEASE).xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/mitre/CoT%20Uid%20Schema%20%20%28PUBLIC%20RELEASE%29.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/mitre/CoT Uid Schema  (PUBLIC RELEASE).xsd",
+      "bytes": 2187,
+      "sha256": "3d2c64bb9c78e1cd323f3b45a696dcb5941cf7f74fa234e6735d0a16d6a94578"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/mitre/documents/CoT Developer's Guide - 2005 0831 (PUBLIC RELEASE).pdf",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/mitre/documents/CoT%20Developer%27s%20Guide%20-%202005%200831%20%28PUBLIC%20RELEASE%29.pdf",
+      "local_path": "docs/pdfs/CoT_Developers_Guide_2005.pdf",
+      "bytes": 415943,
+      "sha256": "1c70388abef691beb347040fe48e70e85b08fb714c2f2400bf0b83af74eacfe4"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/mitre/types.txt",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/mitre/types.txt",
+      "local_path": "docs/sources/atak-civ/takcot/mitre/types.txt",
+      "bytes": 32971,
+      "sha256": "20eb564ba5c899f901c618b8265bdb4c154a100cf8dbd62441cef7e239ef3bb6"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/Chat.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/Chat.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/Chat.xsd",
+      "bytes": 2246,
+      "sha256": "026e14206d54f58e5b362c6f537f3df52b818e2e34296f4e5e6819dd0b8c1094"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/Drawing Shapes - Circle.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/Drawing%20Shapes%20-%20Circle.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/Drawing Shapes - Circle.xsd",
+      "bytes": 2470,
+      "sha256": "b2111ef66635067a2b314042440fedcf7f2636de1a1b4d46e90a77c3e48acb3b"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/Drawing Shapes - Free Form.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/Drawing%20Shapes%20-%20Free%20Form.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/Drawing Shapes - Free Form.xsd",
+      "bytes": 2502,
+      "sha256": "82a8d7a5822c833b832830864d65b25314a05fc8bf054dd3b43de98ee85cf86d"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/Drawing Shapes - Rectangle.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/Drawing%20Shapes%20-%20Rectangle.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/Drawing Shapes - Rectangle.xsd",
+      "bytes": 2460,
+      "sha256": "58934a9f10a7507844f3e509aa5daf17d73ab2c82e69dad395876ae9851294f9"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/Drawing Shapes - Telestration.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/Drawing%20Shapes%20-%20Telestration.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/Drawing Shapes - Telestration.xsd",
+      "bytes": 2236,
+      "sha256": "e490f7b8fb99130a75cc6e35eac09a8363abc32c7729c3470811ac3988de8888"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/Geo Fence.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/Geo%20Fence.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/Geo Fence.xsd",
+      "bytes": 2503,
+      "sha256": "5a58c8a0b0f2d628ffa8e8a3eda3a07e738675042bc67b8e155a94577964baa9"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/Marker - 2525.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/Marker%20-%202525.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/Marker - 2525.xsd",
+      "bytes": 3373,
+      "sha256": "2abac90e7e09f1c79f82d3923c890dc4aeb0ba94d09009bb117e4d96d6a7d6f3"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/Marker - Icon Set.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/Marker%20-%20Icon%20Set.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/Marker - Icon Set.xsd",
+      "bytes": 3135,
+      "sha256": "38a3c9ceba49d1aadc643edf34233ecb78ffa797fc73ab9130d8014bf753a749"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/Marker - Spot.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/Marker%20-%20Spot.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/Marker - Spot.xsd",
+      "bytes": 3115,
+      "sha256": "d160f3a09778fbdf7e58a6a790d8b717022db27e00904bf54b2c23b21364f83e"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/Range & Bearing - Bullseye.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/Range%20%26%20Bearing%20-%20Bullseye.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/Range & Bearing - Bullseye.xsd",
+      "bytes": 3342,
+      "sha256": "67b7cb5bc318e81938ded2c2920b008bd7daff001a2d1361bc0d4c686691a20a"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/Range & Bearing - Circle.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/Range%20%26%20Bearing%20-%20Circle.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/Range & Bearing - Circle.xsd",
+      "bytes": 2782,
+      "sha256": "a6f13c2fcd10c250cbc4cc0bd414038c0891ad57b3882902639a324ecc14d8ee"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/Range & Bearing - Line.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/Range%20%26%20Bearing%20-%20Line.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/Range & Bearing - Line.xsd",
+      "bytes": 6105,
+      "sha256": "966c237611a9caf2737d03d05dfe5b0a6bf719695d0fb5bb15292631ab7c987d"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/Route.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/Route.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/Route.xsd",
+      "bytes": 5549,
+      "sha256": "51b895e3f2c44cd11ed7b6f08fe00a3dfb6cfe7086d95857b762f5a3c6af8355"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/__cep.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/__cep.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/__cep.xsd",
+      "bytes": 2725,
+      "sha256": "ee92fa3a9c47e85c19915db63ff99482310c9dbc8de7903f4f266938c2af276e"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/__chat.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/__chat.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/__chat.xsd",
+      "bytes": 1095,
+      "sha256": "09d405c0a332dadc66de85ea0bb03443db49329965a0905a3811bb82af7f4c90"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/__chatreceipt.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/__chatreceipt.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/__chatreceipt.xsd",
+      "bytes": 781,
+      "sha256": "b202dca0f54fe63615b533e8d220c522e74f1ae6024d244d2ec8878f75c57c85"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/__geofence.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/__geofence.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/__geofence.xsd",
+      "bytes": 751,
+      "sha256": "ad90f40856bdb40e779004e646980d40c6ddd345868b6e5808de35f55a3b2a7f"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/__group.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/__group.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/__group.xsd",
+      "bytes": 326,
+      "sha256": "f8aacfd13747222da57bf5a48793d9c4b9e7bb4b6ad01c724b46a436181e3f8d"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/__lob.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/__lob.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/__lob.xsd",
+      "bytes": 3315,
+      "sha256": "96ddb81e13e762837b8b5102cdb9d595c24910ea36dfd8b53bb937543d0e6f23"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/__milsym.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/__milsym.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/__milsym.xsd",
+      "bytes": 556,
+      "sha256": "6d5906050a77602bc1d89e364d1db09176f59aa51681d9e6427e4a4e4b9743f2"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/__remotecontrol.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/__remotecontrol.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/__remotecontrol.xsd",
+      "bytes": 2523,
+      "sha256": "9fd7f5f827d9077a2256e26482c5915ff67b3475566678d68c8836f713d29ef1"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/__serverdestination.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/__serverdestination.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/__serverdestination.xsd",
+      "bytes": 297,
+      "sha256": "7b9ca34b5216c37674a629f31cbe1e86102a02091c080ad50315609c3c1f7cf8"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/__signalInfo.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/__signalInfo.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/__signalInfo.xsd",
+      "bytes": 16071,
+      "sha256": "e56a55cdc935aca671817eca003d36741b9ae5f2179fcf6a27520dd14610668e"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/__video.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/__video.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/__video.xsd",
+      "bytes": 293,
+      "sha256": "6f708a1c575bd23dc764343532ef7c13794487a67c5c1a7765328082a907e9c5"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/archive.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/archive.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/archive.xsd",
+      "bytes": 207,
+      "sha256": "5a89a1cd908c11e56c22f1da554abdea74e9dd85f2a39fe5a5ef4322d962542f"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/attachment_list.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/attachment_list.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/attachment_list.xsd",
+      "bytes": 287,
+      "sha256": "df07558581c2cf006d7bad7e961d0a0965dcc83e6009f7baddca65d7ce8f20fb"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/chatgrp.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/chatgrp.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/chatgrp.xsd",
+      "bytes": 581,
+      "sha256": "3d18e13ef6351aa74b4ad18f8a6eacaa8bf0b640f3d4e49fa8ab528b59502711"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/color.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/color.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/color.xsd",
+      "bytes": 312,
+      "sha256": "ac28d3fc7b60e8f31bc214498f35f4c495ba4b427b5ae7f7da622e737bddde01"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/contact.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/contact.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/contact.xsd",
+      "bytes": 458,
+      "sha256": "e490b8c04601f7da379bf153df229037c04bebd4bd9438f6e108ffc3d06dba3c"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/creator.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/creator.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/creator.xsd",
+      "bytes": 386,
+      "sha256": "215eb3d8fa24f23f4c27dfbe3b119526931d29a8e05afeabdabb4acb05f63341"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/emergency.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/emergency.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/emergency.xsd",
+      "bytes": 441,
+      "sha256": "9736a59d61ec5aaf5499c2aa95a7ee8bad71270b093be31b1fb7825b248456d3"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/environment.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/environment.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/environment.xsd",
+      "bytes": 454,
+      "sha256": "86e882710a9cc6e418a3004ad878d51023fdb78671ad12e0ce55c32e72146743"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/extrudeMode.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/extrudeMode.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/extrudeMode.xsd",
+      "bytes": 479,
+      "sha256": "bf3693761a432a4eaccd2a9808b3a51c6effd4faf3811615ef78ea1a8935c5fc"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/fileshare.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/fileshare.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/fileshare.xsd",
+      "bytes": 675,
+      "sha256": "4656736d66874fd824d01bb16434358afda5b8a59246b041e0da51d22065847b"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/fillColor.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/fillColor.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/fillColor.xsd",
+      "bytes": 262,
+      "sha256": "9eaddea3e71d94a3c88ff049bc9c24da0726cd24a707c105a2a73b3bc5590d06"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/height.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/height.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/height.xsd",
+      "bytes": 187,
+      "sha256": "884762820da55b8dfc6646bba31554ff049fca6509705658f2e5e18060ab50cf"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/height_unit.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/height_unit.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/height_unit.xsd",
+      "bytes": 192,
+      "sha256": "1a8f0f97274ae0172cd1defef3c1d8419624fc66511e2972ae8f0c663d4c0c53"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/hierarchy.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/hierarchy.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/hierarchy.xsd",
+      "bytes": 1021,
+      "sha256": "9fcbf09810c90c07ff2f8306f32884067c13f06a90360b3aa8483f6ce697f43e"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/labels_on.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/labels_on.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/labels_on.xsd",
+      "bytes": 301,
+      "sha256": "e4af6e282dfc3e6766d931213afbab1e9f6d29c62e898a6845b3a804ee611a99"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/link.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/link.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/link.xsd",
+      "bytes": 891,
+      "sha256": "dc33f145999c9c476195c83d4063371df07c6e2cc61c1a0068bec2e07e9338e7"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/mission.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/mission.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/mission.xsd",
+      "bytes": 3324,
+      "sha256": "faca7f3d4c0149168710f14146310ffab18560d979920019b578c7d434e9e669"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/precisionlocation.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/precisionlocation.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/precisionlocation.xsd",
+      "bytes": 932,
+      "sha256": "9ffb616431d090e042ad865a7dc9f299add099dfdddf8dda269b6bf099ecf022"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/remarks.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/remarks.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/remarks.xsd",
+      "bytes": 394,
+      "sha256": "3bcf2b4613e0b6bd11d6c0f0e2b9d5e84f6bb4c3a3726b9e9e34043d74dd2b5c"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/shape.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/shape.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/shape.xsd",
+      "bytes": 2593,
+      "sha256": "2a93a2adaf9a25f3b4928e5e69249ba2346d6e9c42dabd5b725685551f53510f"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/status.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/status.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/status.xsd",
+      "bytes": 361,
+      "sha256": "2c7477e5cadd792e7531befa6f4a55aecf7857dfd0b7a73e74b25d45cc89da81"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/strokeColor.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/strokeColor.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/strokeColor.xsd",
+      "bytes": 265,
+      "sha256": "e8a6424bc6d4d97f457202bcc03577c6c066519881bc7a8a29a8453fa16dd553"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/strokeWeight.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/strokeWeight.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/strokeWeight.xsd",
+      "bytes": 269,
+      "sha256": "bedc795328f699854fb96f6b32b8e312ff8a2d6bb63cbb2d6d4dc0d23723ecfc"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/takv.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/takv.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/takv.xsd",
+      "bytes": 416,
+      "sha256": "4b1f08506e9ff8b3607e1ebe5836a58832797deacb4e4b071836d85cf7d4861a"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/track.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/track.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/track.xsd",
+      "bytes": 416,
+      "sha256": "d5f93a48803b188e8f9fcd982357f395047f8df959f8d1c629155b06c1f98783"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/uid.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/uid.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/uid.xsd",
+      "bytes": 342,
+      "sha256": "e06d25f827d08ff963fbaccc758cfd10326beb9cfe4b3c289a751b2f6e272bb4"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/details/usericon.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/details/usericon.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/details/usericon.xsd",
+      "bytes": 296,
+      "sha256": "fd7bd34e9a220beabc8929b3d805a2081c30cfeebedd4c660fb53879fbac4988"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takcot/xsd/event/point.xsd",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takcot/xsd/event/point.xsd",
+      "local_path": "docs/sources/atak-civ/takcot/xsd/event/point.xsd",
+      "bytes": 2841,
+      "sha256": "95491fa2a4561d2c77c486a34eb961e218947f17b5e97791c51c54e502edd1ae"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takproto/README.txt",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takproto/README.txt",
+      "local_path": "docs/sources/atak-civ/takproto/README.txt",
+      "bytes": 23478,
+      "sha256": "dd41f6c4db3170accc9af82b531f6d98085e647b883d7fa2ec8425fb30528bd4"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takproto/contact.proto",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takproto/contact.proto",
+      "local_path": "docs/sources/atak-civ/takproto/contact.proto",
+      "bytes": 482,
+      "sha256": "97f0b035275f34a9abd03eba78f649d0d145c23a86d2434114c2e92ba5f02c81"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takproto/cotevent.proto",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takproto/cotevent.proto",
+      "local_path": "docs/sources/atak-civ/takproto/cotevent.proto",
+      "bytes": 2478,
+      "sha256": "c751d1600851845528e66b9fa18f4a924e2c919428a0ed24dc8983e045c941da"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takproto/detail.proto",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takproto/detail.proto",
+      "local_path": "docs/sources/atak-civ/takproto/detail.proto",
+      "bytes": 3526,
+      "sha256": "cf95245dbb4dfa50c5eb21d5aaed223b92ffe2fd882105dc80b8dc89c51130f0"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takproto/group.proto",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takproto/group.proto",
+      "local_path": "docs/sources/atak-civ/takproto/group.proto",
+      "bytes": 400,
+      "sha256": "015d7dfd911c783897a9ff9eb7080ba4efb10a3e16159c2d56b2c1d2bad95bcb"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takproto/precisionlocation.proto",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takproto/precisionlocation.proto",
+      "local_path": "docs/sources/atak-civ/takproto/precisionlocation.proto",
+      "bytes": 429,
+      "sha256": "d38fa7ef8559f227717214ea3f984b6209b35ce96e1f429c956693e48fd82143"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takproto/status.proto",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takproto/status.proto",
+      "local_path": "docs/sources/atak-civ/takproto/status.proto",
+      "bytes": 366,
+      "sha256": "023acd68798aaa1f4e7b1f0a8dc3ba0a335cdc1e200d8b185ba5bf87373f6da2"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takproto/takcontrol.proto",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takproto/takcontrol.proto",
+      "local_path": "docs/sources/atak-civ/takproto/takcontrol.proto",
+      "bytes": 1127,
+      "sha256": "71db4f10cb58ea0bdc16a64a5147c4f0aacec70422da929ec5009359bfe6f2dd"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takproto/takmessage.proto",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takproto/takmessage.proto",
+      "local_path": "docs/sources/atak-civ/takproto/takmessage.proto",
+      "bytes": 444,
+      "sha256": "03607dbd0dbd146a7110cef660d26b513df8215079ea0ed42959c2f2ef7aad0e"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takproto/takv.proto",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takproto/takv.proto",
+      "local_path": "docs/sources/atak-civ/takproto/takv.proto",
+      "bytes": 504,
+      "sha256": "73466344963e819a349a21e0869017334fb202253d546b6e354394e7f351a817"
+    },
+    {
+      "repository": "TAK-Product-Center/atak-civ",
+      "commit": "9f6893dd657feacc35ec5de03dad721c2e44170e",
+      "upstream_path": "takproto/track.proto",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/atak-civ/9f6893dd657feacc35ec5de03dad721c2e44170e/takproto/track.proto",
+      "local_path": "docs/sources/atak-civ/takproto/track.proto",
+      "bytes": 405,
+      "sha256": "31f2e5c1f7814be1fbbba6df5fed43fe5993f0079e8af40714d16998629d3aa3"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-common/src/main/java/com/bbn/marti/remote/ClientEndpoint.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-common/src/main/java/com/bbn/marti/remote/ClientEndpoint.java",
+      "local_path": "docs/sources/Server/src/takserver-common/src/main/java/com/bbn/marti/remote/ClientEndpoint.java",
+      "bytes": 2101,
+      "sha256": "2da09e848d5ed46b528aa77943251d74d1b90ec8e3fb3a23e039192d9eef0410"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/src/main/java/com/bbn/marti/groups/DistributedPersistentGroupManager.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/src/main/java/com/bbn/marti/groups/DistributedPersistentGroupManager.java",
+      "local_path": "docs/sources/Server/src/takserver-core/src/main/java/com/bbn/marti/groups/DistributedPersistentGroupManager.java",
+      "bytes": 43014,
+      "sha256": "d88258b59df1c2b597315e7dbdf535f5f83ef5a459546b703988663cbf1f1b0f"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/src/main/java/com/bbn/marti/groups/GroupFederationUtil.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/src/main/java/com/bbn/marti/groups/GroupFederationUtil.java",
+      "local_path": "docs/sources/Server/src/takserver-core/src/main/java/com/bbn/marti/groups/GroupFederationUtil.java",
+      "bytes": 26034,
+      "sha256": "03bd05f0addaa9e465fc8481ecbe24c28f20d34a5140f0b3dace5b9d997cc2ed"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/src/main/java/com/bbn/marti/service/SubmissionService.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/src/main/java/com/bbn/marti/service/SubmissionService.java",
+      "local_path": "docs/sources/Server/src/takserver-core/src/main/java/com/bbn/marti/service/SubmissionService.java",
+      "bytes": 116912,
+      "sha256": "eb18791ac5c17353a17fff6b166fb0a1f737f747b55452ddc635052595fffd9a"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/src/main/java/tak/server/cluster/DistributedSubmissionService.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/src/main/java/tak/server/cluster/DistributedSubmissionService.java",
+      "local_path": "docs/sources/Server/src/takserver-core/src/main/java/tak/server/cluster/DistributedSubmissionService.java",
+      "bytes": 6592,
+      "sha256": "ad9e12b45f1af51e121a2bdec3b8f42a5850b082faa3371b732de2c1be167562"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/src/main/java/tak/server/grid/GroupManagerProxyFactory.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/src/main/java/tak/server/grid/GroupManagerProxyFactory.java",
+      "local_path": "docs/sources/Server/src/takserver-core/src/main/java/tak/server/grid/GroupManagerProxyFactory.java",
+      "bytes": 969,
+      "sha256": "6adfc0c2d8addb3f6ccb8f2d4e0b040f604332031e6018df19ad492d35304a57"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/takserver-war/src/main/java/com/bbn/marti/cot/search/model/ApiResponse.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/cot/search/model/ApiResponse.java",
+      "local_path": "docs/sources/Server/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/cot/search/model/ApiResponse.java",
+      "bytes": 2168,
+      "sha256": "a3780e1929e3aeb11cfe10bc8097db1eb6af268e8dad75fa99f1615ef2f338ca"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/ContentServlet.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/ContentServlet.java",
+      "local_path": "docs/sources/Server/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/ContentServlet.java",
+      "bytes": 14904,
+      "sha256": "e2dd9227a834ee7cfc5b8f0e4ddfa8f323ff34736db36c69512016d060d20c09"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/MetadataServlet.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/MetadataServlet.java",
+      "local_path": "docs/sources/Server/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/MetadataServlet.java",
+      "bytes": 9592,
+      "sha256": "bd9a5a54b386d7de42612b569cb83de9f569ce7e784bf76bd8d667a23d7f01d2"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/MissionPackageCreatorServlet.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/MissionPackageCreatorServlet.java",
+      "local_path": "docs/sources/Server/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/MissionPackageCreatorServlet.java",
+      "bytes": 12117,
+      "sha256": "690658e64c60f65ed278d29c75f33d461329d70e763c95069ac536c2439e8903"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/MissionPackageQueryServlet.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/MissionPackageQueryServlet.java",
+      "local_path": "docs/sources/Server/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/MissionPackageQueryServlet.java",
+      "bytes": 7529,
+      "sha256": "502d46ff4b5032d69f7d5531571368a03a71ff96e1e6ba9ec294f5ed70f72a5b"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/MissionPackageUploadServlet.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/MissionPackageUploadServlet.java",
+      "local_path": "docs/sources/Server/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/MissionPackageUploadServlet.java",
+      "bytes": 12675,
+      "sha256": "c56a270b7fb58695396b8fb606f13106216834039ba44da88b9423eae35df951"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/SearchServlet.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/SearchServlet.java",
+      "local_path": "docs/sources/Server/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/sync/SearchServlet.java",
+      "bytes": 13337,
+      "sha256": "b8d16e6a7c000f000d7a6e5ea30947766d1b78b03ad32ece77d3663463c0a95d"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/takserver-war/src/main/java/com/bbn/marti/util/VersionApi.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/util/VersionApi.java",
+      "local_path": "docs/sources/Server/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/util/VersionApi.java",
+      "bytes": 2696,
+      "sha256": "6952369479a1d4fca8e4c97134385384a0e7186ddb9200e790cbf70947e9641d"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-plugins/src/main/java/com/bbn/marti/sync/SearchServletConstant.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-plugins/src/main/java/com/bbn/marti/sync/SearchServletConstant.java",
+      "local_path": "docs/sources/Server/src/takserver-plugins/src/main/java/com/bbn/marti/sync/SearchServletConstant.java",
+      "bytes": 185,
+      "sha256": "05793234f445f238b2765e30cc878d36d508c7311e47c00eea641447caad0f67"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-takcl-core/src/main/openapi/takserver-openapi-spec.json",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-takcl-core/src/main/openapi/takserver-openapi-spec.json",
+      "local_path": "docs/sources/Server/src/takserver-takcl-core/src/main/openapi/takserver-openapi-spec.json",
+      "bytes": 789551,
+      "sha256": "d540b0630aa7eadc41d2de4d75ca127ae90827a56644f2774d7888693c26b53d"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-common/src/main/java/com/bbn/marti/remote/groups/Direction.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-common/src/main/java/com/bbn/marti/remote/groups/Direction.java",
+      "local_path": "docs/sources/Server/src/takserver-common/src/main/java/com/bbn/marti/remote/groups/Direction.java",
+      "bytes": 232,
+      "sha256": "f7b59574b962fb576a5b5fcc51f30d89aeda3fdbf97b393096794ba1b54de3f0"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/src/main/java/com/bbn/marti/groups/MessagingUtilImpl.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/src/main/java/com/bbn/marti/groups/MessagingUtilImpl.java",
+      "local_path": "docs/sources/Server/src/takserver-core/src/main/java/com/bbn/marti/groups/MessagingUtilImpl.java",
+      "bytes": 16695,
+      "sha256": "07390df233b2626b9c3a7d94915f90fc8c6da38e7e540ebdefcc5f72d6e0e27b"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/src/main/java/com/bbn/marti/nio/netty/NioNettyBuilder.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/src/main/java/com/bbn/marti/nio/netty/NioNettyBuilder.java",
+      "local_path": "docs/sources/Server/src/takserver-core/src/main/java/com/bbn/marti/nio/netty/NioNettyBuilder.java",
+      "bytes": 14875,
+      "sha256": "c0e893d1608209cd6322e7eadb8a57cc419187cd9b03e962433ebed64f2212b1"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/src/test/java/tak/server/TakMessageConversionTests.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/src/test/java/tak/server/TakMessageConversionTests.java",
+      "local_path": "docs/sources/Server/src/takserver-core/src/test/java/tak/server/TakMessageConversionTests.java",
+      "bytes": 1146,
+      "sha256": "8b677ae6220bb66825377a9da355b26187c8383f5305d54568f49ea1ec52f647"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/takserver-war/src/main/java/com/bbn/marti/groups/GroupsApi.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/groups/GroupsApi.java",
+      "local_path": "docs/sources/Server/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/groups/GroupsApi.java",
+      "bytes": 13305,
+      "sha256": "4229408a7f59171e42d6764dda6c5235aa4c9737f1b9ff18f745e73f959ff0af"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/takserver-war/src/main/java/com/bbn/marti/network/ContactManagerApi.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/network/ContactManagerApi.java",
+      "local_path": "docs/sources/Server/src/takserver-core/takserver-war/src/main/java/com/bbn/marti/network/ContactManagerApi.java",
+      "bytes": 4470,
+      "sha256": "f4544700e6824043e733313900cb13af3c1b3d334c468d6a226ffca21ec36369"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-core/takserver-war/src/main/java/com/bbn/tak/tls/CertManagerApi.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-core/takserver-war/src/main/java/com/bbn/tak/tls/CertManagerApi.java",
+      "local_path": "docs/sources/Server/src/takserver-core/takserver-war/src/main/java/com/bbn/tak/tls/CertManagerApi.java",
+      "bytes": 17242,
+      "sha256": "f1d62e248dd29fe76ef35fc9426107b877a5fb4e74c3a20d732a9b5a1331eda4"
+    },
+    {
+      "repository": "TAK-Product-Center/Server",
+      "commit": "5187abd46d827d37cfc5708805eced197a837e49",
+      "upstream_path": "src/takserver-plugins/src/main/java/tak/server/proto/StreamingProtoBufHelper.java",
+      "url": "https://raw.githubusercontent.com/TAK-Product-Center/Server/5187abd46d827d37cfc5708805eced197a837e49/src/takserver-plugins/src/main/java/tak/server/proto/StreamingProtoBufHelper.java",
+      "local_path": "docs/sources/Server/src/takserver-plugins/src/main/java/tak/server/proto/StreamingProtoBufHelper.java",
+      "bytes": 26241,
+      "sha256": "41622813f7bb8434a338dcaea883960679221de12d0841fc907ed781f4904d4d"
+    }
+  ]
+}

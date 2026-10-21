@@ -1,0 +1,66 @@
+[package]
+name = "ferristak"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.94"
+description = "A Rust-based Team Awareness Kit API, backed by Supabase Postgres and deployed on Fly.io"
+license = "MIT"
+publish = false
+
+[dependencies]
+# Web framework and HTTP middleware
+axum = "0.8"
+tower = "0.5"
+tower-http = { version = "0.7", features = ["trace", "cors"] }
+
+# Async runtime
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "net", "signal"] }
+
+# Database (Supabase / Postgres). Runtime-checked queries: no DATABASE_URL is
+# required at compile time, which keeps the Docker build hermetic.
+sqlx = { version = "0.9", default-features = false, features = [
+    "runtime-tokio",
+    "tls-rustls-ring",
+    "postgres",
+    "uuid",
+    "chrono",
+    "json",
+    "migrate",
+    "derive",
+] }
+
+# Serialization and validation
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+validator = { version = "0.21", features = ["derive"] }
+regex = "1"
+
+# Cursor-on-Target (CoT) is an XML protocol; we read and write it directly.
+quick-xml = { version = "0.42", features = ["serialize"] }
+
+# Authentication
+jsonwebtoken = { version = "11", default-features = false, features = ["rust_crypto"] }
+argon2 = "0.6"
+rand = "0.9"
+
+# Observability and configuration
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "fmt"] }
+dotenvy = "0.15"
+
+# Errors and core types
+anyhow = "1"
+thiserror = "2"
+uuid = { version = "1", features = ["v4", "serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+
+[dev-dependencies]
+tower = { version = "0.5", features = ["util"] }
+http-body-util = "0.1"
+uuid = { version = "1", features = ["v4"] }
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+strip = true

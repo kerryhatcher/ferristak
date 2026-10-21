@@ -1,0 +1,15 @@
+target/
+.git/
+.github/
+docs/
+compose.yaml
+# Pi package + project config (not needed in the app image)
+pi-flyio/
+.pi/
+.env
+.env.*
+!.env.example
+*.md
+!README.md
+fly.toml
+LICENSE
