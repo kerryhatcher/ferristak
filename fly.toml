@@ -28,11 +28,14 @@ primary_region = "ord"
     timeout = "2s"
     grace_period = "10s"
     method = "GET"
-    path = "/healthz"
+    path = "/health"
 
 [deploy]
   # Runs once per deploy, before any machine is updated. Has access to secrets.
-  release_command = "ferristak migrate"
+  # The image ENTRYPOINT is already `/usr/local/bin/ferristak`, and Fly does not
+  # override it, so the command must be just the subcommand. `ferristak migrate`
+  # here would run as `ferristak ferristak migrate` and fail.
+  release_command = "migrate"
 
 [[vm]]
   size = "shared-cpu-1x"
