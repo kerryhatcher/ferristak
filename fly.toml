@@ -4,7 +4,7 @@
 # Secrets (set once, never commit):
 #   fly secrets set DATABASE_URL='postgresql://...' JWT_SECRET="$(openssl rand -base64 48)"
 app = "ferristak"
-primary_region = "iad"
+primary_region = "ord"
 
 [build]
 
