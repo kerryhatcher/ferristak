@@ -31,7 +31,8 @@ The data model is derived from the reference schemas in `docs/sources/atak-civ`:
 - **Detail sub-schemas** — `contact`, `__group`, `status`, `track`, `takv`,
   `precisionlocation`, `remarks`.
 - **Protobuf definitions** (`takproto/*.proto`) — strongly-typed detail plus the
-  `xmlDetail` escape hatch, which we mirror with the `extra_detail` JSONB column.
+  `xmlDetail` escape hatch. We mirror it by preserving the original `<event>`
+  element verbatim in `raw_xml` and treating the typed columns as an index.
 
 Mapping:
 
@@ -47,7 +48,7 @@ Mapping:
 | `<takv device platform os version>`       | `Takv`                                          |
 | `<precisionlocation geopointsrc altsrc>`  | `PrecisionLocation`                             |
 | `<remarks>`                               | `remarks`                                       |
-| unmapped `<detail>` content               | `extra_detail` (JSONB)                          |
+| original event element (unmapped detail, attributes, ordering) | `raw_xml` (text) |
 
 Schema rules are enforced twice — in `NewCotEvent::validate()` and as database
 `check` constraints:
@@ -57,9 +58,12 @@ Schema rules are enforced twice — in `NewCotEvent::validate()` and as database
 - `lat ∈ [-90, 90]`, `lon ∈ [-180, 180]`, `start <= stale`, `battery ∈ [0, 100]`.
 - Unknown point metrics use the CoT sentinel `999999`.
 
-> **Note:** inbound XML currently persists the strongly-typed detail set. Detail
-> elements outside that set are ignored on the XML path; use the JSON
-> representation's `extra_detail` object to carry custom detail.
+> **Note:** events submitted as XML store the original `<event>…</event>` element
+> in `raw_xml`, so XML responses (`?format=xml` / `Accept: xml`) are lossless:
+> unknown detail children and attributes, attribute casing (`releasableto` vs
+> `releasableTo`) and element order all survive. The typed columns are only a
+> searchable index. Events submitted as JSON have no `raw_xml`, so their XML
+> output is synthesised from the typed fields.
 
 ## Project layout
 
@@ -71,7 +75,8 @@ Schema rules are enforced twice — in `NewCotEvent::validate()` and as database
 ├── compose.yaml          # local Postgres for development
 ├── migrations/
 │   ├── 0001_init.sql     # users
-│   └── 0002_cot_events.sql  # cot_events + cot_latest view
+│   ├── 0002_cot_events.sql  # cot_events + cot_latest view
+│   └── 0003_raw_xml.sql  # lossless event element (raw_xml)
 ├── src
 │   ├── main.rs           # CLI: `serve` (default) / `migrate`
 │   ├── lib.rs

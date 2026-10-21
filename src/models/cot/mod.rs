@@ -270,9 +270,12 @@ pub struct NewCotEvent {
     pub point: Point,
     #[serde(default)]
     pub detail: Detail,
-    /// Detail content that has no strongly-typed field (protobuf `xmlDetail`).
-    #[serde(default = "empty_object")]
-    pub extra_detail: serde_json::Value,
+    /// The original CoT `<event>` element exactly as received, when this event
+    /// arrived as XML. It is the authoritative representation for XML output;
+    /// the typed fields above are only an index over it. Empty for JSON input,
+    /// where XML output is synthesised from the typed fields instead.
+    #[serde(default)]
+    pub raw_xml: String,
 }
 
 impl NewCotEvent {
@@ -353,8 +356,9 @@ pub struct CotEvent {
     pub how: String,
     pub point: Point,
     pub detail: Detail,
-    #[serde(skip_serializing_if = "is_empty_object")]
-    pub extra_detail: serde_json::Value,
+    /// Original `<event>` element for XML submissions; see `NewCotEvent::raw_xml`.
+    #[serde(default, skip_serializing_if = "String::is_empty")]
+    pub raw_xml: String,
     #[serde(with = "cot_time")]
     pub created_at: DateTime<Utc>,
 }
@@ -367,7 +371,7 @@ const COLUMNS: &str = "id, owner_id, cot_version, event_type, access, caveat, re
      opex, uid, send_time, start_time, stale_time, how, lat, lon, hae, ce, le, \
      contact_callsign, contact_endpoint, group_name, group_role, battery, readiness, \
      track_speed, track_course, track_slope, takv_device, takv_platform, takv_os, \
-     takv_version, geopointsrc, altsrc, remarks, extra_detail, created_at";
+     takv_version, geopointsrc, altsrc, remarks, raw_xml, created_at";
 
 /// Flat database representation of a CoT event.
 #[derive(Debug, Clone, FromRow)]
@@ -407,7 +411,7 @@ struct CotEventRow {
     geopointsrc: Option<String>,
     altsrc: Option<String>,
     remarks: Option<String>,
-    extra_detail: serde_json::Value,
+    raw_xml: String,
     created_at: DateTime<Utc>,
 }
 
@@ -477,7 +481,7 @@ impl From<CotEventRow> for CotEvent {
                 precisionlocation,
                 remarks: row.remarks,
             },
-            extra_detail: row.extra_detail,
+            raw_xml: row.raw_xml,
             created_at: row.created_at,
         }
     }
@@ -503,7 +507,7 @@ pub async fn insert(
             uid, send_time, start_time, stale_time, how, lat, lon, hae, ce, le, \
             contact_callsign, contact_endpoint, group_name, group_role, battery, readiness, \
             track_speed, track_course, track_slope, takv_device, takv_platform, takv_os, \
-            takv_version, geopointsrc, altsrc, remarks, extra_detail \
+            takv_version, geopointsrc, altsrc, remarks, raw_xml \
          ) values ( \
             $1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20, \
             $21,$22,$23,$24,$25,$26,$27,$28,$29,$30,$31,$32,$33,$34,$35 \
@@ -511,7 +515,7 @@ pub async fn insert(
             opex, uid, send_time, start_time, stale_time, how, lat, lon, hae, ce, le, \
             contact_callsign, contact_endpoint, group_name, group_role, battery, readiness, \
             track_speed, track_course, track_slope, takv_device, takv_platform, takv_os, \
-            takv_version, geopointsrc, altsrc, remarks, extra_detail, created_at";
+            takv_version, geopointsrc, altsrc, remarks, raw_xml, created_at";
 
     let row = sqlx::query_as::<_, CotEventRow>(sql)
         .bind(owner_id)
@@ -548,7 +552,7 @@ pub async fn insert(
         .bind(precision.and_then(|p| p.geopointsrc.as_deref()))
         .bind(precision.map(|p| p.altsrc.as_str()))
         .bind(detail.remarks.as_deref())
-        .bind(&input.extra_detail)
+        .bind(input.raw_xml.as_str())
         .fetch_one(pool)
         .await?;
 
@@ -647,14 +651,6 @@ fn default_access() -> String {
     "Undefined".to_string()
 }
 
-fn empty_object() -> serde_json::Value {
-    serde_json::Value::Object(serde_json::Map::new())
-}
-
-fn is_empty_object(value: &serde_json::Value) -> bool {
-    value.as_object().is_none_or(serde_json::Map::is_empty)
-}
-
 pub(crate) fn ensure(condition: bool, message: &'static str) -> Result<(), AppError> {
     if condition {
         Ok(())
@@ -705,7 +701,7 @@ mod tests {
                 }),
                 ..Detail::default()
             },
-            extra_detail: empty_object(),
+            raw_xml: String::new(),
         }
     }
 

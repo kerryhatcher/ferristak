@@ -8,7 +8,7 @@ use chrono::{DateTime, Utc};
 use serde::{Deserialize, Serialize};
 
 use super::{
-    cot_time, unknown_metric, Contact, CotEvent, Detail, Group, NewCotEvent, Point,
+    cot_time, default_access, unknown_metric, Contact, CotEvent, Detail, Group, NewCotEvent, Point,
     PrecisionLocation, Status, Takv, Track,
 };
 use crate::error::AppError;
@@ -21,12 +21,13 @@ pub struct CotEventXml {
     pub version: f64,
     #[serde(rename = "@type")]
     pub event_type: String,
-    #[serde(rename = "@access")]
+    #[serde(rename = "@access", default = "default_access")]
     pub access: String,
     #[serde(rename = "@caveat", default, skip_serializing_if = "Option::is_none")]
     pub caveat: Option<String>,
     #[serde(
         rename = "@releasableto",
+        alias = "@releasableTo",
         default,
         skip_serializing_if = "Option::is_none"
     )]
@@ -380,7 +381,7 @@ impl From<CotEventXml> for NewCotEvent {
             how: x.how,
             point: x.point.into(),
             detail: x.detail.map(Detail::from).unwrap_or_default(),
-            extra_detail: serde_json::Value::Object(serde_json::Map::new()),
+            raw_xml: String::new(),
         }
     }
 }
@@ -391,8 +392,7 @@ impl From<CotEventXml> for NewCotEvent {
 
 /// Render a single event as a CoT XML document.
 pub fn to_xml(event: &CotEvent) -> Result<String, AppError> {
-    let wire = CotEventXml::from(event);
-    let body = quick_xml::se::to_string(&wire).map_err(se_error)?;
+    let body = event_xml_body(event)?;
     Ok(format!(
         "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n{body}"
     ))
@@ -402,16 +402,73 @@ pub fn to_xml(event: &CotEvent) -> Result<String, AppError> {
 pub fn to_xml_list(events: &[CotEvent]) -> Result<String, AppError> {
     let mut out = String::from("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<events>");
     for event in events {
-        out.push_str(&quick_xml::se::to_string(&CotEventXml::from(event)).map_err(se_error)?);
+        out.push_str(&event_xml_body(event)?);
     }
     out.push_str("</events>");
     Ok(out)
 }
 
+/// The `<event>…</event>` element for an event: the original bytes when the
+/// event came in as XML, otherwise a lossy rendering of the typed fields.
+pub(crate) fn event_xml_body(event: &CotEvent) -> Result<String, AppError> {
+    if !event.raw_xml.is_empty() {
+        return Ok(event.raw_xml.clone());
+    }
+    quick_xml::se::to_string(&CotEventXml::from(event)).map_err(se_error)
+}
+
 /// Parse a single CoT XML document into an inbound event.
 pub fn from_xml(input: &str) -> Result<NewCotEvent, AppError> {
     let wire: CotEventXml = quick_xml::de::from_str(input).map_err(de_error)?;
-    Ok(NewCotEvent::from(wire))
+    let mut event = NewCotEvent::from(wire);
+    // Preserve the original element so XML round-trips keep every unknown
+    // detail child/attribute and attribute casing verbatim. The typed fields
+    // parsed above remain a searchable index over this payload.
+    event.raw_xml = extract_root_element(input).unwrap_or_else(|| input.trim().to_string());
+    Ok(event)
+}
+
+/// Extract the root element (`<event>…</event>`) from a document, excluding the
+/// XML declaration, processing instructions and surrounding whitespace. Returns
+/// `None` if the document has no complete root element.
+pub(crate) fn extract_root_element(input: &str) -> Option<String> {
+    use quick_xml::{events::Event, Reader};
+
+    let mut reader = Reader::from_str(input);
+    let mut buf = Vec::new();
+    let mut root_start: Option<usize> = None;
+    let mut depth: usize = 0;
+
+    loop {
+        let pos_before = reader.buffer_position() as usize;
+        match reader.read_event_into(&mut buf) {
+            Ok(Event::Start(_)) => {
+                if root_start.is_none() {
+                    root_start = Some(pos_before);
+                }
+                depth += 1;
+            }
+            Ok(Event::Empty(_)) => {
+                if root_start.is_none() {
+                    // Self-closing root, e.g. `<event/>`.
+                    let end = reader.buffer_position() as usize;
+                    return input.get(pos_before..end).map(str::to_owned);
+                }
+            }
+            Ok(Event::End(_)) => {
+                depth = depth.saturating_sub(1);
+                if depth == 0 {
+                    let end = reader.buffer_position() as usize;
+                    let start = root_start?;
+                    return input.get(start..end).map(str::to_owned);
+                }
+            }
+            Ok(Event::Eof) => return None,
+            Ok(_) => {}
+            Err(_) => return None,
+        }
+        buf.clear();
+    }
 }
 
 /// CoT conventionally spells the version as `2.0`. `f64` alone would render as
@@ -504,7 +561,7 @@ mod tests {
                 }),
                 remarks: Some("on station".to_string()),
             },
-            extra_detail: serde_json::Value::Object(serde_json::Map::new()),
+            raw_xml: String::new(),
             created_at: t,
         }
     }
@@ -562,5 +619,81 @@ mod tests {
         assert!(xml.starts_with("<?xml"));
         assert!(xml.contains("<events>"));
         assert!(xml.contains("<event "));
+    }
+
+    #[test]
+    fn missing_access_defaults_to_undefined() {
+        let xml = r#"<event version="2.0" type="a-f-G-U-C" uid="X"
+               time="2026-10-21T15:49:23Z" start="2026-10-21T15:49:23Z"
+               stale="2026-10-21T15:54:23Z" how="m-g">
+          <point lat="1.5" lon="2.5" hae="999999" ce="999999" le="999999"/>
+        </event>"#;
+        let parsed = from_xml(xml).unwrap();
+        assert_eq!(parsed.access, "Undefined");
+    }
+
+    #[test]
+    fn accepts_camel_case_releasable_to() {
+        let xml = r#"<event version="2.0" type="a-f-G-U-C" access="Unclassified"
+               releasableTo="USA" uid="X"
+               time="2026-10-21T15:49:23Z" start="2026-10-21T15:49:23Z"
+               stale="2026-10-21T15:54:23Z" how="m-g">
+          <point lat="1.5" lon="2.5" hae="999999" ce="999999" le="999999"/>
+        </event>"#;
+        let parsed = from_xml(xml).unwrap();
+        assert_eq!(parsed.releasable_to.as_deref(), Some("USA"));
+    }
+
+    #[test]
+    fn preserves_unknown_detail_and_attributes() {
+        let xml = r#"<event version="2.0" type="a-f-G-U-C" access="Unclassified" uid="X"
+               time="2026-10-21T15:49:23Z" start="2026-10-21T15:49:23Z"
+               stale="2026-10-21T15:54:23Z" how="m-g">
+          <point lat="1.5" lon="2.5" hae="999999" ce="999999" le="999999"/>
+          <detail><usericon iconsetpath="x.png"/><contact callsign="A" foo="bar"/></detail>
+        </event>"#;
+        let parsed = from_xml(xml).unwrap();
+
+        // The typed index still picks up the known field...
+        assert_eq!(parsed.detail.contact.as_ref().unwrap().callsign, "A");
+        // ...while unknown children/attributes live on in the raw payload.
+        assert!(!parsed.raw_xml.is_empty());
+        assert!(parsed.raw_xml.starts_with("<event"), "{}", parsed.raw_xml);
+        assert!(parsed.raw_xml.contains("<usericon"), "{}", parsed.raw_xml);
+        assert!(parsed.raw_xml.contains("foo=\"bar\""), "{}", parsed.raw_xml);
+
+        // ...and survive an XML render.
+        let mut event = persisted_event();
+        event.raw_xml = parsed.raw_xml.clone();
+        let out = to_xml(&event).unwrap();
+        assert!(out.contains("<usericon"), "{out}");
+        assert!(out.contains("foo=\"bar\""), "{out}");
+    }
+
+    #[test]
+    fn list_uses_raw_elements_without_nested_declarations() {
+        let mut event = persisted_event();
+        event.raw_xml = concat!(
+            "<event version=\"2.0\" type=\"a-f-G-U-C\" access=\"Unclassified\" uid=\"X\" ",
+            "time=\"2026-10-21T15:49:23.000Z\" start=\"2026-10-21T15:49:23.000Z\" ",
+            "stale=\"2026-10-21T15:54:23.000Z\" how=\"m-g\">",
+            "<point lat=\"1.5\" lon=\"2.5\" hae=\"999999\" ce=\"999999\" le=\"999999\"/>",
+            "<detail><usericon iconsetpath=\"x.png\"/></detail></event>"
+        )
+        .to_string();
+        let xml = to_xml_list(&[event]).unwrap();
+        assert!(xml.starts_with("<?xml"));
+        assert!(xml.contains("<events>"));
+        assert_eq!(xml.matches("<?xml").count(), 1, "{xml}");
+        assert!(xml.contains("<usericon"), "{xml}");
+    }
+
+    #[test]
+    fn extract_root_element_strips_declaration_and_whitespace() {
+        let doc = "<?xml version=\"1.0\"?>\n  <event a=\"1\"><point/></event>\n";
+        assert_eq!(
+            extract_root_element(doc).as_deref(),
+            Some("<event a=\"1\"><point/></event>")
+        );
     }
 }
