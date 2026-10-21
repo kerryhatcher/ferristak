@@ -42,17 +42,21 @@ pub use xml::{from_xml, to_xml, to_xml_list};
 /// Sentinel used by CoT when a point metric is unknown.
 pub const UNKNOWN_METRIC: f64 = 999_999.0;
 
+// The CoT grammar is ASCII (`xs:pattern` with `\w` is `[A-Za-z0-9_]` in XML
+// Schema). Rust's `\w` is Unicode-aware, so use explicit classes instead.
+
 /// CoT base-event `type` grammar: `word(-word)*(;optional)`.
-static TYPE_RE: LazyLock<Regex> =
-    LazyLock::new(|| Regex::new(r"^\w+(-\w+)*(;[^;]*)?$").expect("valid type regex"));
+static TYPE_RE: LazyLock<Regex> = LazyLock::new(|| {
+    Regex::new(r"^[A-Za-z0-9_]+(-[A-Za-z0-9_]+)*(;[^;]*)?$").expect("valid type regex")
+});
 
 /// CoT `how` grammar: `word(-word)*`.
 static HOW_RE: LazyLock<Regex> =
-    LazyLock::new(|| Regex::new(r"^\w(-\w+)*$").expect("valid how regex"));
+    LazyLock::new(|| Regex::new(r"^[A-Za-z0-9_](-[A-Za-z0-9_]+)*$").expect("valid how regex"));
 
 /// CoT `qos` grammar: `digit-word-word`.
 static QOS_RE: LazyLock<Regex> =
-    LazyLock::new(|| Regex::new(r"^\d-\w-\w$").expect("valid qos regex"));
+    LazyLock::new(|| Regex::new(r"^[0-9]-[A-Za-z0-9_]-[A-Za-z0-9_]$").expect("valid qos regex"));
 
 /// CoT `opex` grammar: `o|e|s` with an optional `-name`.
 static OPEX_RE: LazyLock<Regex> =
@@ -312,6 +316,10 @@ impl NewCotEvent {
         ensure(
             self.start <= self.stale,
             "start must be before or equal to stale",
+        )?;
+        ensure(
+            self.start <= self.time && self.time <= self.stale,
+            "time must be between start and stale",
         )?;
         self.point.validate()?;
         self.detail.validate()?;
@@ -725,6 +733,24 @@ mod tests {
     #[test]
     fn valid_event_passes() {
         sample().validate().unwrap();
+    }
+
+    #[test]
+    fn rejects_non_ascii_type() {
+        let mut event = sample();
+        event.event_type = "a-f-G-Ü".to_string();
+        assert!(event.validate().is_err());
+    }
+
+    #[test]
+    fn rejects_time_outside_validity_window() {
+        let mut event = sample();
+        event.time = event.stale + chrono::Duration::seconds(1);
+        assert!(event.validate().is_err());
+
+        let mut event = sample();
+        event.time = event.start - chrono::Duration::seconds(1);
+        assert!(event.validate().is_err());
     }
 
     #[test]

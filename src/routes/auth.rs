@@ -71,14 +71,16 @@ pub async fn login(
 ) -> Result<Json<AuthResponse>, AppError> {
     payload.validate().map_err(validation_error)?;
 
-    let found = user::find_by_email(&state.db, &payload.email)
-        .await?
-        .ok_or(AppError::Unauthorized)?;
+    let found = user::find_by_email(&state.db, &payload.email).await?;
 
-    if !password::verify_password(&payload.password, &found.password_hash) {
+    // Always run Argon2, even for an unknown email, so login timing does not
+    // reveal which accounts exist.
+    let stored = found.as_ref().map(|user| user.password_hash.as_str());
+    if !password::verify_password_or_dummy(&payload.password, stored) {
         return Err(AppError::Unauthorized);
     }
 
+    let found = found.ok_or(AppError::Unauthorized)?;
     let token = state.jwt.issue(found.id, &found.email, &found.role)?;
 
     Ok(Json(AuthResponse {

@@ -76,7 +76,8 @@ Schema rules are enforced twice — in `NewCotEvent::validate()` and as database
 ├── migrations/
 │   ├── 0001_init.sql     # users
 │   ├── 0002_cot_events.sql  # cot_events + cot_latest view
-│   └── 0003_raw_xml.sql  # lossless event element (raw_xml)
+│   ├── 0003_raw_xml.sql  # lossless event element (raw_xml)
+│   └── 0004_hardening.sql  # ASCII grammar, time window, RLS/grants
 ├── src
 │   ├── main.rs           # CLI: `serve` (default) / `migrate`
 │   ├── lib.rs
@@ -294,12 +295,20 @@ deploy. Machines are health-checked at `/health` and scale to zero when idle.
   `shared` exposes the team picture. Admins always see everything.
 - The operator directory is admin-only, so ordinary operators cannot enumerate
   account emails.
-- Login and bad-token paths share the same response, avoiding account
-  enumeration; emails are stored canonically (lower-cased).
+- Login and bad-token paths share the same response and always run Argon2
+  (against a dummy hash for unknown emails), so neither the response nor the
+  timing reveals whether an account exists; emails are stored canonically
+  (lower-cased).
 - Internal errors are logged server-side and surfaced as a generic `500`;
   unique/foreign-key violations map to `409`/`422`.
 - Requests are body-size limited (256 KiB), and CoT inputs are validated against
-  the schema before they reach the database.
+  the schema before they reach the database. The `type`/`how`/`qos` grammar is
+  ASCII, and `time` must fall within `[start, stale]`.
+- PostgREST roles (`anon`, `authenticated`) are revoked on the app tables and RLS
+  is disabled: this service is the only client and enforces authorization itself,
+  so a future least-privilege database role is not silently blocked by RLS with
+  no policies. If you expose the tables through PostgREST, add RLS policies and
+  re-enable it.
 - Always set `CORS_ALLOWED_ORIGINS` in production.
 
 ## License
